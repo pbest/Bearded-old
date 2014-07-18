@@ -2199,17 +2199,19 @@ input[type=text], textarea, select {
 textarea {
   resize: vertical; }
 
-.container {
-  margin: 0 auto; }
-  @media screen and (max-width: 767px) {
-    .container {
-      padding: 20px; } }
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .container {
-      padding: 20px; } }
-  @media screen and (min-width: 1025px) {
-    .container {
-      padding: 40px; } }
+#wrapper {
+  margin: 0 auto;
+  max-width: 95%; }
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 20px; } }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    padding: 20px; } }
+@media screen and (min-width: 1025px) {
+  .container {
+    padding: 40px; } }
 
 .fill {
   width: 100%;
@@ -2241,11 +2243,101 @@ textarea {
     TYPOGRAPHY (scss/partials/_typography.scss)
 ==========================================================================
 */
+h1 {
+  font-family: 'Libre Baskerville';
+  line-height: 1.45;
+  font-size: 30px;
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  color: white;
+  opacity: .7;
+  padding-top: 30px;
+  margin: 0 auto; }
+
 /*
 ==========================================================================
 	HEADER (scss/partials/_header.scss)
 ==========================================================================
 */
+header.branding {
+  width: 100%;
+  margin-left: 25px;
+  margin-right: 25px;
+  text-align: center;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 2.2%;
+  background-image: url("../img/fields.jpg");
+  background-position-y: 24%;
+  background-size: cover; }
+
+header.branding img {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 75%; }
+
+.header-nav {
+  width: 95%;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-family: 'Lato';
+  clear: both;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+  left: -13px;
+  text-align: center; }
+
+.header-nav img {
+  max-width: 140px;
+  opacity: 1; }
+
+.header-nav--block {
+  width: 40%; }
+
+.block-left {
+  float: left; }
+
+.block-right {
+  float: right; }
+
+.nav-item {
+  width: 50%;
+  float: left;
+  line-height: 60px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Lato';
+  font-weight: 400;
+  color: #555;
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 0;
+  padding: 0; }
+
+.nav-item:hover {
+  color: #11cfbf;
+  transition: all .7s;
+  -webkit-transition: all .7s;
+  cursor: pointer; }
+
+.nav:hover {
+  transition: all .7s;
+  -webkit-transition: all .7s; }
+
+.active {
+  color: #11cfbf; }
+
+.header-nav i {
+  line-height: 60px;
+  opacity: .4; }
+
 /*
 ==========================================================================
 	CONTENT (scss/partials/_content.scss)

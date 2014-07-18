@@ -3,3 +3,79 @@
 	HEADER (scss/partials/_header.scss)
 ==========================================================================
 */
+header.branding {
+	width: 100%;
+	margin-left: 25px;
+	margin-right: 25px;
+	text-align: center;
+	height: 500px;
+	margin: 0 auto;
+	margin-top: 2.2%;
+	background-image: url('../img/fields.jpg');
+	background-position-y: 24%;
+	background-size: cover;
+}
+header.branding img {
+	margin: 0 auto;
+	margin-top: 100px;
+	width: 75%;
+}
+.header-nav {
+	width: 95%;
+	margin: 0 auto;
+	border-bottom: 1px solid $white-10;
+	color: #fff;
+	font-family: 'Lato';
+	clear: both;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	position: relative;
+	left: -13px;
+	text-align: center;
+}
+.header-nav img {
+	max-width: 140px;
+	opacity: 1;
+}
+.header-nav--block {
+	width: 40%;
+}
+.block-left {
+	float: left;
+}
+.block-right {
+	float: right;
+}
+.nav-item {
+	width: 50%;
+	float: left;
+	line-height: 60px;
+	display: inline-block;
+	text-decoration: none;
+	font-family: 'Lato';
+	font-weight: 400;
+	color: #555;
+	font-size: 15px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin: 0;
+	padding: 0;
+}
+.nav-item:hover {
+	color: $cyan;
+	transition: all .7s;
+    -webkit-transition: all .7s;
+    cursor: pointer;
+}
+.nav:hover {
+	transition: all .7s;
+    -webkit-transition: all .7s;
+}
+.active {
+	color: $cyan;	
+}
+.header-nav i {
+	line-height: 60px;
+	opacity: .4;
+}

@@ -64,7 +64,18 @@ a {
     
 }
 h1 {
-   
+	font-family: 'Libre Baskerville';
+	line-height: 1.45;
+	font-size: 30px;
+	text-align: center;
+	font-style: italic;
+	font-weight: 400;
+	padding-top: 10px;
+	padding-bottom: 12px;
+	color: $white;
+	opacity: .7;
+	padding-top: 30px;
+	margin: 0 auto;
 }
  
 h2 {
